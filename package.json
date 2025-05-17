@@ -1,0 +1,22 @@
+{
+  "name": "brainbench",
+  "version": "1.0.0",
+  "description": "BrainBench is a full-stack web application designed to enable seamless quiz creation and participation for educational or training purposes. The platform features two distinct user roles: Quiz Setters (educators/trainers) and Students (quiz participants).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajaythakurr/BrainBench.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajaythakurr/BrainBench/issues"
+  },
+  "homepage": "https://github.com/ajaythakurr/BrainBench#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
