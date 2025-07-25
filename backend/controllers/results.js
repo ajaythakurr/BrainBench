@@ -1,9 +1,8 @@
 const Exam = require("../models/exam");
 const Result = require("../models/results");
-const wrapAsync = require("../utils/wrapAsync");
 
 //submit exam and save result
-module.exports.submitExam = wrapAsync(async (req,res)=>{
+module.exports.submitExam = async (req,res)=>{
     const  {examId,responses} = req.body;
     //validate if user is participant
     if(req.user.role !== "participant"){
@@ -58,4 +57,4 @@ module.exports.submitExam = wrapAsync(async (req,res)=>{
         message:"Exam submitted successfully",
     })
     
-})
+}

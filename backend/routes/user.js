@@ -16,6 +16,15 @@ router
     .get(userController.loginForm)
     .post(wrapasync(userController.login))
 
+//logout route
+router
+    .route("/logout")
+    .get(wrapasync(userController.logout))
+
+
+
+
+
 
 module.exports = router;
 

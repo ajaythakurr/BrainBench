@@ -8,12 +8,12 @@ const resultController = require("../controllers/results");
 router
     .route("/create")
     .get(examController.examForm)
-    .post(examController.createExam);
+    .post(wrapasync(examController.createExam));
 
-//open exam
+//open exam 
 router
     .route("/open/:examId")
     .get(examController.openExam)
-    .post(resultController.submitExam);
+    .post(wrapasync(resultController.submitExam));
 
     
