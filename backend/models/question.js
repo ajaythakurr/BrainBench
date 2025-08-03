@@ -21,7 +21,7 @@ const questionSchema = new mongoose.Schema({
           message: "A question must have at least 2 options."
         }
       },      
-      correctOption: {
+    correctOption: {
         type: String,
         required: true,
         validate: {

@@ -22,10 +22,6 @@ router
     .get(wrapasync(userController.logout))
 
 
-
-
-
-
 module.exports = router;
 
 
